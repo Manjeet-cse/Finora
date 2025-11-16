@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Finora</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Finora</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signup.html" class="active">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Create Your Finora Account</h1>
+            <p>Start your investment journey in just 5 minutes. It's free and secure.</p>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section class="signup-section">
+        <div class="container">
+            <div class="signup-wrapper">
+                <!-- Signup Form -->
+                <div class="signup-form-container">
+                    <h2>Get Started</h2>
+                    <form id="signupForm" class="signup-form">
+                        <!-- Personal Information -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your 10-digit phone number" pattern="[0-9]{10}" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pan">PAN Number</label>
+                            <input type="text" id="pan" name="pan" placeholder="Enter your PAN (e.g., ABCDE1234F)" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" required>
+                        </div>
+
+                        <!-- Account Information -->
+                        <h3 class="form-section-title">Account Details</h3>
+
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" placeholder="Choose a username" minlength="5" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Create a strong password" minlength="8" required>
+                            <p class="password-hint">Password must be at least 8 characters long</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" minlength="8" required>
+                        </div>
+
+                        <!-- Account Type -->
+                        <div class="form-group">
+                            <label>Account Type</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="individual" name="accountType" value="individual" checked>
+                                    <label for="individual">Individual</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="corporate" name="accountType" value="corporate">
+                                    <label for="corporate">Corporate</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Address -->
+                        <h3 class="form-section-title">Address</h3>
+
+                        <div class="form-group">
+                            <label for="address">Full Address</label>
+                            <textarea id="address" name="address" rows="3" placeholder="Enter your complete address" required></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" placeholder="City" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" placeholder="State" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pincode">Pincode</label>
+                                <input type="text" id="pincode" name="pincode" placeholder="Pincode" pattern="[0-9]{6}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <input type="text" id="country" name="country" placeholder="Country" value="India" required>
+                            </div>
+                        </div>
+
+                        <!-- Terms & Conditions -->
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the Terms and Conditions</label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">I agree to the Privacy Policy</label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="marketing" name="marketing">
+                            <label for="marketing">Send me offers and updates (Optional)</label>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary btn-lg">Create Account</button>
+                        <p class="login-link">Already have an account? <a href="#login">Sign In</a></p>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+
+                <!-- Signup Benefits -->
+                <div class="signup-benefits">
+                    <h2>Why Join Finora?</h2>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✓</div>
+                        <div class="benefit-content">
+                            <h4>Zero Commission</h4>
+                            <p>Invest in mutual funds without any commission charges.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✓</div>
+                        <div class="benefit-content">
+                            <h4>Fast & Secure</h4>
+                            <p>Industry-leading security with lightning-fast transactions.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✓</div>
+                        <div class="benefit-content">
+                            <h4>24/7 Support</h4>
+                            <p>Our dedicated support team is always ready to help.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✓</div>
+                        <div class="benefit-content">
+                            <h4>Real-time Analytics</h4>
+                            <p>Get detailed insights into your investments and trading.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✓</div>
+                        <div class="benefit-content">
+                            <h4>Multiple Platforms</h4>
+                            <p>Access from web, iOS, and Android devices anytime.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✓</div>
+                        <div class="benefit-content">
+                            <h4>Tax Reporting</h4>
+                            <p>Automatic tax documentation and reporting tools.</p>
+                        </div>
+                    </div>
+
+                    <div class="cta-box">
+                        <p>Join 50,000+ investors who trust Finora with their financial future.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Info Section -->
+    <section class="security-info">
+        <div class="container">
+            <h2>Your Security is Our Priority</h2>
+            <div class="security-grid">
+                <div class="security-card">
+                    <div class="security-icon">🔒</div>
+                    <h3>SSL Encryption</h3>
+                    <p>All your data is encrypted with industry-standard SSL protocols.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">🛡️</div>
+                    <h3>Two-Factor Authentication</h3>
+                    <p>Add an extra layer of security to your account with 2FA.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">✓</div>
+                    <h3>Verified & Compliant</h3>
+                    <p>We comply with all regulatory requirements and certifications.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">🔐</div>
+                    <h3>Data Privacy</h3>
+                    <p>Your personal information is never shared with third parties.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How long does account creation take?</h4>
+                    <p>Your account will be created in just 5 minutes. You can start trading and investing immediately after completing your KYC verification.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What documents do I need?</h4>
+                    <p>You'll need your PAN, Aadhaar, and a bank account. We'll guide you through the process step by step.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is there a minimum investment amount?</h4>
+                    <p>No minimum required! You can start investing with as little as ₹100 in mutual funds or ₹1 in stocks.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you charge account opening fees?</h4>
+                    <p>No! Account opening is completely free. You only pay charges when you trade or invest.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Finora</h4>
+                    <p>We provide simple, transparent, and secure investment solutions for everyone.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <p>Connect with us on social media for updates and insights.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Finora. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
