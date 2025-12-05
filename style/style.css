@@ -151,7 +151,7 @@ a:hover {
 
 /* ===========================Hero Section=========================== */
 .hero {
-    background: linear-gradient(135deg, #2980B9 0%, #27AE60 100%);
+background: linear-gradient(135deg, #2980B9, #27AE60);
     color: #FFFFFF;
     padding: 100px 20px;
     text-align: center;
@@ -187,7 +187,7 @@ a:hover {
     color: #555555;
 }
 
-/* ===Features Section==== */
+/* ========Features Section========= */
 .features {
     padding: 80px 20px;
     background-color: #FFFFFF;
@@ -479,7 +479,7 @@ a:hover {
     background-color: #ECECEC;
 }
 
-/* ===========================About Section=========================== */
+/* =================About Section===================== */
 .about-section {
     padding: 80px 20px;
 }
@@ -615,7 +615,7 @@ a:hover {
 .position {
     color: #27AE60;
     font-weight: 600;
-    margin-bottom: 10px !important;
+    margin-bottom: 10px;
 }
 
 .bio {
@@ -717,9 +717,9 @@ a:hover {
     margin: 0 !important;
 }
 
-/* ===========================
+/* =================
    Contact Section
-   =========================== */
+   ================= */
 .contact-section {
     padding: 80px 20px;
 }
@@ -1138,6 +1138,7 @@ a:hover {
     color: #2980B9;
     margin-bottom: 50px;
 }
+
 
 .security-grid {
     display: grid;
