@@ -69,3 +69,59 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+  // 5) Sign-in form simple validation (demo)
+  const signinForm = document.getElementById("signinForm");
+  const signinMsg = document.getElementById("signinMessage");
+
+  if (signinForm && signinMsg) {
+    signinForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const email = signinForm.signinEmail.value.trim();
+      const password = signinForm.signinPassword.value.trim();
+
+      if (email === "" || password === "") {
+        signinMsg.textContent = "Please enter both email and password.";
+        signinMsg.className = "form-message error";
+        return;
+      }
+
+      // Demo check (backend नहीं है, सिर्फ front-end validation)
+      if (password.length < 8) {
+        signinMsg.textContent = "Password must be at least 8 characters.";
+        signinMsg.className = "form-message error";
+        return;
+      }
+
+      signinMsg.textContent = "Sign in successful (demo). Redirecting to dashboard...";
+      signinMsg.className = "form-message success";
+
+      setTimeout(function () {
+        // बाद में इसे real dashboard.html से replace कर सकते हो
+        window.location.href = "index.html";
+      }, 1500);
+    });
+  }
+
+    // Dark / Light theme toggle
+  const themeToggleBtn = document.getElementById("themeToggle");
+
+  if (themeToggleBtn) {
+    // Load saved theme
+    const savedTheme = localStorage.getItem("finora-theme");
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark-mode");
+      themeToggleBtn.textContent = "Light Mode";
+    }
+
+    themeToggleBtn.addEventListener("click", function () {
+      document.body.classList.toggle("dark-mode");
+
+      const isDark = document.body.classList.contains("dark-mode");
+      themeToggleBtn.textContent = isDark ? "Light Mode" : "Dark Mode";
+
+      // Save preference
+      localStorage.setItem("finora-theme", isDark ? "dark" : "light");
+    });
+  }
+
