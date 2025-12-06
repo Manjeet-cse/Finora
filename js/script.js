@@ -10,19 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // 2) Home page CTA buttons → signup.html
-  const ctaButtons = document.querySelectorAll(
-    '.hero .btn-primary, .cta .btn-primary, .cta .btn-lg'
-  );
-
-  ctaButtons.forEach(btn => {
-    btn.addEventListener("click", function () {
-      if (this.closest("form")) return; // अगर form का submit button है तो redirect मत करो
-      window.location.href = "signup.html";
-    });
-  });
-
-  // 3) Contact form validation (simple)
+  // Contact form validation 
   const contactForm = document.getElementById("contactForm");
   const contactMsg = document.getElementById("formMessage");
 
@@ -46,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // 4) Signup form validation (password match check)
+  // Signup form validation
   const signupForm = document.getElementById("signupForm");
   const signupMsg = document.getElementById("formMessage");
 
@@ -63,13 +51,13 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      signupMsg.textContent = "Account created successfully (demo).";
+      signupMsg.textContent = "Account created successfully ";
       signupMsg.className = "form-message success";
       signupForm.reset();
     });
   }
 });
-  // 5) Sign-in form simple validation (demo)
+  // Sign-in form simple validation
   const signinForm = document.getElementById("signinForm");
   const signinMsg = document.getElementById("signinMessage");
 
@@ -86,20 +74,18 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      // Demo check (backend नहीं है, सिर्फ front-end validation)
       if (password.length < 8) {
         signinMsg.textContent = "Password must be at least 8 characters.";
         signinMsg.className = "form-message error";
         return;
       }
 
-      signinMsg.textContent = "Sign in successful (demo). Redirecting to dashboard...";
+      signinMsg.textContent = "Sign in successful Welcome to finora";
       signinMsg.className = "form-message success";
 
       setTimeout(function () {
-        // बाद में इसे real dashboard.html से replace कर सकते हो
         window.location.href = "index.html";
-      }, 1500);
+      }, 2000);
     });
   }
 

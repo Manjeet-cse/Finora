@@ -1363,3 +1363,107 @@ body.dark-mode .form-group select {
 body.dark-mode .footer {
     background-color: #000000;
 }
+
+/* ===========================
+   Responsive Design 
+   =========================== */
+@media (max-width: 768px) {
+
+  /* Common heading sizes */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  /* Navbar: links */
+  .navbar .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Two‑column layouts → single column */
+  .about-content,
+  .contact-wrapper,
+  .product-body,
+  .signup-wrapper,
+  .signin-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* Grids: cards one per row */
+  .features-grid,
+  .products-grid,
+  .partner-grid,
+  .team-grid,
+  .stats-grid,
+  .testimonials-grid,
+  .faq-grid,
+  .reasons-grid,
+  .security-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Form rows: stacked fields */
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* CTA buttons full width on small devices */
+  .product-cta {
+    flex-direction: column;
+  }
+
+  .product-cta .btn,
+  .btn-lg {
+    width: 100%;
+  }
+
+  /* Signup / Signin side box नीचे चले जाए */
+  .signup-benefits,
+  .signin-info {
+    position: static;
+    margin-top: 25px;
+  }
+
+  /* Signin extra options vertical */
+  .signin-extra {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/* ===========================
+   Extra Small Screens
+   =========================== */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 2.1rem;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+}
