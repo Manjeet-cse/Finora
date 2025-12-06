@@ -151,7 +151,11 @@ a:hover {
 
 /* ===========================Hero Section=========================== */
 .hero {
+<<<<<<< HEAD
 background: linear-gradient(135deg, #2980B9, #27AE60);
+=======
+    background: linear-gradient(135deg, #2980B9 0%, #27AE60 100%);
+>>>>>>> 6ad29585c9e30c509ac1abaf69ca458858777c25
     color: #FFFFFF;
     padding: 100px 20px;
     text-align: center;
@@ -187,7 +191,11 @@ background: linear-gradient(135deg, #2980B9, #27AE60);
     color: #555555;
 }
 
+<<<<<<< HEAD
 /* ========Features Section========= */
+=======
+/* ===Features Section==== */
+>>>>>>> 6ad29585c9e30c509ac1abaf69ca458858777c25
 .features {
     padding: 80px 20px;
     background-color: #FFFFFF;
@@ -479,7 +487,11 @@ background: linear-gradient(135deg, #2980B9, #27AE60);
     background-color: #ECECEC;
 }
 
+<<<<<<< HEAD
 /* =================About Section===================== */
+=======
+/* ===========================About Section=========================== */
+>>>>>>> 6ad29585c9e30c509ac1abaf69ca458858777c25
 .about-section {
     padding: 80px 20px;
 }
@@ -615,7 +627,11 @@ background: linear-gradient(135deg, #2980B9, #27AE60);
 .position {
     color: #27AE60;
     font-weight: 600;
+<<<<<<< HEAD
     margin-bottom: 10px;
+=======
+    margin-bottom: 10px !important;
+>>>>>>> 6ad29585c9e30c509ac1abaf69ca458858777c25
 }
 
 .bio {
@@ -717,9 +733,15 @@ background: linear-gradient(135deg, #2980B9, #27AE60);
     margin: 0 !important;
 }
 
+<<<<<<< HEAD
 /* =================
    Contact Section
    ================= */
+=======
+/* ===========================
+   Contact Section
+   =========================== */
+>>>>>>> 6ad29585c9e30c509ac1abaf69ca458858777c25
 .contact-section {
     padding: 80px 20px;
 }
@@ -838,9 +860,13 @@ background: linear-gradient(135deg, #2980B9, #27AE60);
 }
 
 .social-link:hover {
+<<<<<<< HEAD
     background-color: #fefefe;
     color: rgb(88, 183, 33);
     border: 1px solid rgb(36, 222, 113);
+=======
+    background-color: #27AE60;
+>>>>>>> 6ad29585c9e30c509ac1abaf69ca458858777c25
 }
 
 /* ===========================
@@ -1139,7 +1165,10 @@ background: linear-gradient(135deg, #2980B9, #27AE60);
     margin-bottom: 50px;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ad29585c9e30c509ac1abaf69ca458858777c25
 .security-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1174,6 +1203,7 @@ background: linear-gradient(135deg, #2980B9, #27AE60);
     color: #555555;
     font-size: 0.95rem;
 }
+<<<<<<< HEAD
 /* ===========================
    Signin Section
    =========================== */
@@ -1467,3 +1497,5 @@ body.dark-mode .footer {
     font-size: 0.9rem;
   }
 }
+=======
+>>>>>>> 6ad29585c9e30c509ac1abaf69ca458858777c25
