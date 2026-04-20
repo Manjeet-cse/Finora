@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Finora</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Finora</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <button id="themeToggle" class="btn btn-secondary">Dark Mode</button>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Get in touch with our team today.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="trading">Trading Questions</option>
+                                <option value="investment">Investment Advice</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Enter your message here" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-container">
+                    <h2>Get in Touch</h2>
+                    
+                    <div class="info-box">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+918080808080">+91 808-080-8080</a></p>
+                        <p class="info-detail">Mon - Fri, 9 AM - 6 PM IST</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Email</h3>
+                        <p><a href="mailto:support@Finora.com">support@Finora.com</a></p>
+                        <p class="info-detail">We respond within 24 hours</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Address</h3>
+                        <p>Finora Tower</p>
+                        <p>123 Finance Street</p>
+                        <p>Mumbai, Maharashtra 400001</p>
+                        <p class="info-detail">India</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Office Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-link">Facebook</a>
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <a href="#" class="social-link">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>What are your support hours?</h4>
+                    <p>Our support team is available Monday to Friday from 9 AM to 6 PM IST. For urgent issues, you can reach us through our emergency helpline.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How long does it take to open an account?</h4>
+                    <p>You can open an account in just 5 minutes. Complete your KYC verification, and you're ready to start trading and investing.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is my data secure with Finora?</h4>
+                    <p>Yes, we use industry-leading encryption and security protocols to protect your personal and financial information.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you charge any fees?</h4>
+                    <p>We offer commission-free investing in mutual funds. Please check our pricing page for detailed information on all charges and fees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Finora</h4>
+                    <p>We provide simple, transparent, and secure investment solutions for everyone.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <p>Connect with us on social media for updates and insights.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Finora. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
